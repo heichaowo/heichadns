@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeiChaDNS 默认拦截页</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        .content-box {
+            background-color: #e0e0e0;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            font-size: 16px;
+            color: #333;
+            line-height: 2; /* Increased line spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <h1>为什么会在这?</h1>
+        <p>这是 HeiChaDNS 的默认拦截页，原因是您访问了有问题的网址。</p>
+        <ul>
+            <li>您访问的域名存在安全问题（如数据上报、跟踪收集器等）；</li>
+            <li>请求域名存在非法用途（如广告商）；</li>
+            <li>请求域名被管理员拉黑，可联系 heicha 解除。</li>
+        </ul>
+    </div>
+</body>
+</html>
