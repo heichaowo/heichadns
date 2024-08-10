@@ -11,38 +11,48 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #f0f0f0; /* Light mode background color */
             font-family: 'Microsoft YaHei', sans-serif;
         }
         .content-box {
-            background-color: #e0e0e0;
+            background-color: #e0e0e0; /* Light mode background for content box */
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             width: 80%;
             max-width: 600px;
         }
-        h1 {
+        h1, p {
             font-size: 32px;
             font-weight: bold;
-            color: #333;
+            color: #333; /* Light mode text color */
             margin-bottom: 20px;
         }
         p {
             font-size: 20px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 20px;
         }
         ul {
             padding-left: 20px;
         }
         li {
             font-size: 16px;
-            color: #333;
+            color: #333; /* Light mode text color */
             line-height: 2; /* Increased line spacing */
         }
-    </style>
+    
+        /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333; /* Dark mode background color */
+            }
+            .content-box {
+                background-color: #424242; /* Dark mode background for content box */
+            }
+            h1, p, li {
+                color: #e0e0e0; /* Dark mode text color */
+            }
+        }
+    </style>    
 </head>
 <body>
     <div class="content-box">
